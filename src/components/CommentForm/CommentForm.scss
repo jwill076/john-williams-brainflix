@@ -1,0 +1,134 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.flexbox2__jtc-comment-form{
+    border-bottom: 2px solid rgba($brainflix-silver, 0.5);
+    width: 87vw;
+    margin-left: 5vw;
+    padding-bottom: 1.5rem;
+    
+    @include tablet{
+        position: relative;
+    }
+
+    @include desktop{
+        width: 57.5vw;
+    }
+
+    .jtc-comment-form__title{
+        color: $brainflix-silver;
+        font-weight: 600;
+        padding-left: 5.5rem;
+
+        @include tablet{
+            padding-left: 3.75rem;
+            font-size: 0.8rem;
+            padding-bottom: 0.1rem;
+        }
+
+        @include desktop{
+            margin-left: 1.25rem;
+        }
+    }
+
+    .jtc-comment-form__imagebox{
+        display: flex;
+
+        .imagebox__avatar-container{
+            width: 4.5rem;
+            height: 3.5rem;
+            margin-right: 1rem;
+
+            @include tablet{
+            width: 2.75rem;
+            height: 2.5rem;
+            }
+
+            .imagebox__avatar{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .imagebox__input-field{
+            width: 100%;
+
+            .imagebox__input{
+                padding: 0 1.25rem 5.5rem 1.25rem;
+                height: 9rem;
+                font-size: 1.1rem;
+                font-weight: 600;
+                background-color: $brainflix-alabaster;
+                width: 72vw;
+                border: 2px solid $brainflix-mercury;
+                border-radius: 0.4rem;
+
+                @include tablet{
+                    height: 2.5rem;
+                    padding: 1rem;
+                    font-size: 0.85rem;
+                    width: 56vw;
+                }
+
+                @include desktop{
+                    width: 36vw;
+                    margin-left: 1.25rem;
+                }
+            }
+        }
+    }
+
+    .jtc-comment-form__add-comment{
+        background-color: $brainflix-blue;
+        display: flex;
+        border-radius: 0.4rem;
+        margin: 1.5rem 0 0 4.75rem;
+        width: 72vw;
+
+        @include tablet{
+            position: absolute;
+            top: 20%;
+            right: 0;
+            margin: 0;
+            width: 20vw;
+            height: 2.5rem;
+        }
+
+        @include desktop{
+            width: 11.5vw;
+            right: 1.5rem;
+        }
+
+        .add-comment__image-container{
+            padding: 0.65rem 1rem;
+            
+            .add-comment__image{
+                width: 1.1rem;
+            }
+        }
+
+        .add-comment__button-container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-left: -2.25rem;
+
+            @include tablet{
+                margin-left: -2rem;
+            }
+
+            .add-comment__button{
+                background-color: $brainflix-blue;
+                border: none;
+                color: $brainflix-white;
+                font-weight: 600;
+                font-size: 1.1rem;
+
+                @include tablet{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}
