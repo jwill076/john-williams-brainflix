@@ -18,7 +18,9 @@ class App extends React.Component {
   render() {
     return (
       <>
+        <Header />
 
+        <Main dataObject={this.state.details} videosArray={this.state.videos} updateState={this.handleVideoClick}/>
       </>
     );
   }
