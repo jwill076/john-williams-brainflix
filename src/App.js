@@ -15,6 +15,13 @@ class App extends React.Component {
     }
   }
 
+  handleVideoClick = (clickedVideo) => {
+    this.setState((state) => ({
+      details: VideoDetailsData.filter(video => video.id === clickedVideo.id),
+      videos: Videos.filter(video => video.id !== clickedVideo.id)
+    }))
+  }
+
   render() {
     return (
       <>
