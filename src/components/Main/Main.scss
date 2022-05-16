@@ -1,0 +1,25 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.main{
+
+    .main__flexbox{
+
+        @include desktop{
+            display: flex;
+            margin-left: 3rem;
+        }
+
+        .flexbox__container1{
+            width: 60%;
+        }
+
+        .flexbox__container2{
+            
+            @include desktop{
+                border-left: 2px solid rgba($brainflix-silver, 0.5);
+                margin-left: 4.35rem;
+            }
+        }
+    }
+}
