@@ -1,0 +1,65 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/queries' as *;
+
+.container2__title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 1.75rem 0 1.65rem 5vw;
+    color: $brainflix-silver;
+
+    @include tablet{
+        font-size: 0.75rem;
+        margin: 1.5rem 0 1.5rem 5vw;
+    }
+    
+    @include desktop{
+        margin-left: 1.5rem;
+    }
+}
+
+.container2__next-videos{
+    display: flex;
+    margin: 0 5vw;
+    width: 27rem;
+    
+    @include tablet{
+        width: 20rem;
+    }
+
+    @include desktop{
+        margin-left: 1.5rem;
+    }
+
+    .next-videos__image-container{
+
+        .next-videos__image{
+            width: 9rem;
+            height: 5.5rem;
+            border-radius: 0.4rem;
+            margin: 0 1.5rem 1rem 0;
+
+            @include tablet{
+                width: 6.5rem;
+                height: 4rem;
+            }
+        }
+    }
+
+    .next-videos__info{
+        font-size: 1.15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 1.25rem;
+
+        @include tablet{
+            font-size: 0.9rem;   
+        }
+        
+
+        .info__title{
+            font-weight: 600;
+            line-height: 1.5rem;
+        }
+    }
+}
