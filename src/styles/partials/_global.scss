@@ -1,0 +1,46 @@
+@use './queries' as *;
+
+// GLOBAL VARIABLE DECLARATION
+$brainflix-black: #323232;
+$brainflix-dark-black: #000000;
+$brainflix-silver: #afafaf;
+$brainflix-mercury: #e1e1e1;
+$brainflix-white: #ffffff;
+$brainflix-alabaster: #fafafa;
+$brainflix-blue: #0095ff;
+$brainflix-dark-blue: #0065AD;
+
+// IMPORTED FONT FACE
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('../../assets/fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+         url('../../assets/fonts/AvenirNextLTPro-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('../../assets/fonts/AvenirNextLTPro-Demi.woff') format('woff'),
+         url('../../assets/fonts/AvenirNextLTPro-Demi.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AvenirNext LT Pro';
+    src: url('../../assets/fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+         url('../../assets/fonts/AvenirNextLTPro-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+// CREATING MY OWN DEFAULT BROWSER SETTINGS
+* {
+    font-family: 'AvenirNext LT Pro', serif;
+    box-sizing: border-box;
+    margin: 0;
+}
