@@ -17,49 +17,62 @@
     }
 }
 
-.container2__next-videos{
-    display: flex;
-    margin: 0 5vw;
-    width: 27rem;
-    
-    @include tablet{
-        width: 20rem;
-    }
+.container2__next-videos-nav-links{
+    text-decoration: none;
+    color: $brainflix-black;
 
-    @include desktop{
-        margin-left: 1.5rem;
-    }
+    .container2__next-videos{
+        display: flex;
+        margin: 0 5vw;
+        width: 27rem;
+        
+        @include tablet{
+            width: 20rem;
+        }
 
-    .next-videos__image-container{
+        @include desktop{
+            margin-left: 1.5rem;
+        }
 
-        .next-videos__image{
-            width: 9rem;
-            height: 5.5rem;
-            border-radius: 0.4rem;
-            margin: 0 1.5rem 1rem 0;
+        .next-videos__image-container{
 
-            @include tablet{
-                width: 6.5rem;
-                height: 4rem;
+            @include desktop{
+                height: 4.5rem;
+            }
+
+            .next-videos__image{
+                width: 9rem;
+                height: 5.5rem;
+                border-radius: 0.4rem;
+                margin: 0 1.5rem 1rem 0;
+
+                @include tablet{
+                    width: 6.5rem;
+                    height: 4rem;
+                }
             }
         }
-    }
 
-    .next-videos__info{
-        font-size: 1.15rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 1.25rem;
+        .next-videos__info{
+            font-size: 1.15rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 1.25rem;
 
-        @include tablet{
-            font-size: 0.9rem;   
-        }
-        
+            @include tablet{
+                font-size: 0.9rem;   
+            }
 
-        .info__title{
-            font-weight: 600;
-            line-height: 1.5rem;
+            @include desktop{
+                padding-bottom: 1.2rem;
+            }
+            
+
+            .info__title{
+                font-weight: 600;
+                line-height: 1.5rem;
+            }
         }
     }
 }

@@ -1,17 +1,21 @@
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/queries' as *;
 
-.main{
+.home{
 
-    .main__flexbox{
+    .home__flexbox{
 
         @include desktop{
             display: flex;
-            margin-left: 3rem;
+            margin: 0 4vw;
         }
 
         .flexbox__container1{
             width: 60%;
+        }
+
+        @include desktop{
+            width: 92%;
         }
 
         .flexbox__container2{
