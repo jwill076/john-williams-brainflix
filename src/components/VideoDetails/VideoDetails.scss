@@ -1,3 +1,161 @@
 @use '../../styles/partials/global' as *;
 @use '../../styles/partials/queries' as *;
 
+.container1__flexbox1{
+
+    @include desktop{
+        width: 62.5vw;
+    }
+
+    .flexbox1__video-title{
+        font-size: 2.25rem;
+        font-weight: 600;
+        padding: 1.5rem 1rem 1rem 0;
+        border-bottom: 2px solid rgba($brainflix-silver, 0.5);
+        width: 87vw;
+        margin-left: 5vw;
+
+        @include tablet{
+            border: none;
+            font-weight: 700;
+            font-size: 1.95rem;
+            padding-bottom: 0.25rem;
+        }
+    }
+
+    .flexbox1__video-details{
+        margin: 0 5vw;
+        padding: 1.25rem 0;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: space-between;
+        width: 87vw;
+
+        @include tablet{
+            padding: 0;
+        }
+
+        @include desktop{
+            width: 53vw;
+        }
+
+        .video-details__container1{
+            height: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+
+            @include tablet{
+                flex-direction: row;
+                height: 2.75rem;
+                width: 10.5rem;
+            }
+
+            .container1__video-channel{
+                font-weight: 600;
+
+                @include tablet{
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                }
+            }
+
+            .container1__video-timestamp{
+                color: $brainflix-silver;
+
+                @include tablet{
+                    font-size: 0.8rem;
+                    padding-top: 0.1rem;
+                }
+            }
+        }
+
+        .video-details__container2{
+            margin-right: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+
+            @include tablet{
+                flex-direction: row;
+                width: 11rem;
+                margin-right: 0;
+            }
+
+            .container2__flexbox1{
+                display: flex;
+
+                .flexbox1__icon-container{
+
+                    .flexbox1__views-icon{
+                        width: 2rem;
+                        margin-right: 0.75rem;
+
+                        @include tablet{
+                            width: 1.25rem;
+                            margin-right: 0.5rem;
+                        }
+
+                    }
+                }
+
+                .flexbox1__video-views{
+                    color: $brainflix-silver;
+
+                    @include tablet{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+
+            .container2__flexbox2{
+                display: flex;
+
+                .flexbox2__icon-container{
+                    display: flex;
+
+                    .flexbox2__likes-icon{
+                        width: 1.5rem;
+                        margin-right: 0.75rem;
+
+                        @include tablet{
+                            width: 1rem;
+                            margin-right: 0.5rem;
+                            margin-top: -0.5rem;
+                        }
+                    }
+                }
+
+                .flexbox2__video-likes{
+                    color: $brainflix-silver;
+
+                    @include tablet{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .flexbox1__video-description{
+        border-top: 2px solid rgba($brainflix-silver, 0.5);
+        margin: 0 5vw 1.5rem 5vw;
+        padding-top: 1.5rem;
+        font-size: 1.15rem;
+        line-height: 1.6rem;
+        width: 87vw;
+
+        @include tablet{
+            font-size: 0.85rem;
+            line-height: 1.4rem;
+        }
+
+        @include desktop{
+            margin-right: 0;
+            padding-right: 1.25rem;
+            width: 55vw;
+        }
+    }
+}
