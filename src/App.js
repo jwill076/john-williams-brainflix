@@ -1,8 +1,24 @@
 import "./App.scss";
 import React from "react";
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import VideoDetailsData from "./data/video-details.json";
+import Videos from "./data/videos.json";
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import Upload from "./components/Upload/Upload";
-import NotFound from "./components/NotFound/NotFound";
+import Main from "./components/Main/Main";
 
+function App() {
+  return (
+    <BrowserRouter>
+      <Header />
+      
+      <Switch>
+        <Redirect from="/home" to="/" />
+        <Route path="/" exact component={Home} />
+        <Route path="/upload" component={Upload} />
+        <Route path="/:id" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </BrowserRouter>
+  );
+}
+
+export default App;
