@@ -1,9 +1,10 @@
 import "./App.scss";
 import React from "react";
-import VideoDetailsData from "./data/video-details.json";
-import Videos from "./data/videos.json";
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
+import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
+import Home from "../src/components/Home/Home";
+import Upload from "../src/components/Upload/Upload";
+import NotFound from "../src/components/NotFound/NotFound";
 
 function App() {
   return (
