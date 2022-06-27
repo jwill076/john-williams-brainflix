@@ -1,4 +1,3 @@
-import MohanMurugeAvatar from "../../assets/images/Mohan-muruge.jpg";
 import AddCommentIcon from "../../assets/icons/add_comment.svg";
 import "../CommentForm/CommentForm.scss";
 import React from "react";
@@ -14,7 +13,7 @@ function CommentForm() {
                 <div className="imagebox__avatar-container">
                     <img
                         className="imagebox__avatar"
-                        src={MohanMurugeAvatar}
+                        src={"http://localhost:8080/images/Mohan-muruge.jpg"}
                         alt="Mohan-muruge Avatar"
                     />
                 </div>
